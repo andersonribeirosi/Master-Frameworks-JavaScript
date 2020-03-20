@@ -61,9 +61,9 @@ body {
 
 #menu ul {
     line-height: 85px;
-    width: 60%;
+    width: 100%;
     float: right;
-    margin-right: -6%;
+    margin-right: -25%;
 }
 
 #menu ul li {
