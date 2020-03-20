@@ -7,29 +7,6 @@
     <title>Maquetación para el master en FrameWorks JavaScript</title>
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
 
-    <script type="text/JavaScript">
-
-        window.addEventListener("load", function(event){
-
-        var templateClone = document.getElementById("article-template")
-        
-
-        var articles = document.getElementById("articles")
-
-        for(var i = 0; i <= 5; i++){
-            var clonado = templateClone.cloneNode(true)
-            clonado.removeAttribute("id")
-
-            var h2 = clonado.getElementsByTagName("h2")[0];
-            h2.innerHTML = h2.textContent + ' ' + i;
-
-
-            articles.appendChild(clonado);
-        }
-        })
-
-    </script>
-
 </head>
 
 <body>
@@ -59,33 +36,24 @@
         </div>
     </header>
 
-    <div id="slider" class="slider-big">
-        <h1>Bienvenido al master en Frameworks JavaScript</h1>
-        <a href="#" class="btn-white"> Ir ao Blog</a>
-    </div>
-
     <div class="center">
         <section id="content">
-            <h2 class="subheader">Últimos Artigos</h2>
+            <article class="article-item article-detail">
 
-            <!--Lista de Artigos-->
-        <div id="articles">
-            <article class="article-item" id="article-template">
-                <div class="image-wrap">
+                <div class="image-wrap artigo">
                     <img src="https://vertigo.com.br/wp-content/uploads/Saiba-o-que-%C3%A9-React-e-porque-voc%C3%AA-gostaria-de-utiliz%C3%A1-lo-1200x675.jpg"
                         alt="ReactArtigo">
                 </div>
+                <h1 class="subheader">Artigos</h1>
 
-                <h2>Artigos</h2>
                 <span class="date">
                     Fazer em 5 minutos
                 </span>
-                <a href="#">Leia mais</a>
+                <p>
+                    React faz com que a criação de UIs interativas seja uma tarefa fácil. Crie views simples para cada estado na sua aplicação, e o React irá atualizar e renderizar de forma eficiente apenas os componentes necessários na medida em que os dados mudam.
+                </p>
             <div class="clearfix"></div>
-            <br><br>
             </article>
-            <!--Adicionar artigos via JS-->
-        </div>
 
         </section>
 
