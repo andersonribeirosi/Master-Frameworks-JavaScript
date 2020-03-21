@@ -1,3 +1,4 @@
+  
 body {
     text-align: center;
     padding: 0px;
@@ -13,7 +14,7 @@ body {
     width: 100%;
     background: white;
     border-bottom: 1px solid #ccc;
-    border-top: 5px solid #61dafb;
+    border-top: 5px solid #f13e3e;
 }
 
 .center {
@@ -48,12 +49,15 @@ body {
     0% {
         transform: scale(1, 1);
     }
+
     50% {
         transform: scale(1.02, 1.02);
     }
-    55% {
+
+    55%{
         transform: scale(0.95, 0.95);
     }
+
     100% {
         transform: scale(1, 1);
     }
@@ -67,20 +71,19 @@ body {
     float: left;
 }
 
-#menu {
-    line-height: 85px;
+#menu{
     width: 70%;
     float:right;
     font-size: 18px;
 }
 
-#menu ul {
+#menu ul{
     line-height: 85px;
     width: 60%;
-    float: right;
+    float:right;
 }
 
-#menu ul li {
+#menu ul li{
     display: inline-block;
     list-style: none;
     height: 46px;
@@ -88,19 +91,19 @@ body {
     margin-right: 15px;
 }
 
-#menu a {
+#menu a{
     text-decoration: none;
     color: #444;
     transition: 300ms all;
 }
 
 #menu a:hover {
-    color: #0d86d6;
+    color: #f13e3e;
     font-weight: bold;
 }
 
 #slider {
-    background: #207ce5;
+    background: #f13e3e;
     width: 100%;
     height: 320px;
     margin-top: -22px;
@@ -123,6 +126,7 @@ body {
 .subheader img {
     margin-top: 35px;
 }
+
 
 .btn-white {
     text-decoration: none;
@@ -344,68 +348,67 @@ textarea {
 
 /*RESPONSIVO*/
 
-@media (max-width: 1488px) {
-    .center {
+@media (max-width: 1488px){
+    .center{
         width: 85%;
     }
 }
 
-@media (max-width: 1314px) {
-    .center {
+@media (max-width: 1314px){
+    .center{
         width: 95%;
     }
-    #menu ul {
+
+    #menu ul{
         width: auto;
     }
 }
 
-@media (max-width: 881px) {
-    #logo {
+@media (max-width: 881px){
+    #logo{
         width: 265px;
     }
-    #menu {
+
+    #menu{
         width: auto;
     }
 }
 
-@media (max-width: 813px) {
-    #logo {
-        float: none;
+@media (max-width: 813px){
+    #logo{
+        float:none;
         margin: 0px auto;
         margin-top: 20px;
     }
-    #menu, #menu ul {
-        clear: both;
-        float: none;
-        width: 100%;
-        margin: 0px;
-        padding: 0px;
-        line-height: 43px;
+
+    #menu,
+    #menu ul{
+       clear:both;
+       float:none;
+       width: 100%;
+       margin: 0px;
+       padding: 0px;
+       line-height: 43px;
     }
-    #content {
-        float: none;
+
+    #content{
+        float:none;
         width: 100%;
     }
-    #sidebar {
-        float: none;
+
+    #sidebar{
+        float:none;
         width: 60%;
         margin: 0px auto;
         margin-bottom: 50px;
     }
-    #slider h1 {
+
+    #slider h1{
         padding-top: 115px;
         font-size: 25px;
     }
-    .align-form {
-        width: 70%;
-    }
-}
 
-@keyframes girar {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
+    .align-form{
+        width: 70%;
     }
 }
