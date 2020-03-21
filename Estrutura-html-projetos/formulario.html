@@ -38,7 +38,29 @@
 
     <div class="center">
         <section id="content">
-   
+            <h1 class="subheader">FORMULÁRIO</h1>
+            
+            <form class="align-form">
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" class="form-control" name="nome">
+                </div>
+                <div class="form-group">
+                    <label for="sobreNome">Sobrenome</label>
+                    <input type="text" class="form-control" name="sobreNome">
+                </div>
+                <div class="form-group">
+                    <label for="biografia">Biografia</label>
+                    <textarea type="text" class="form-control" name="biografia"></textarea>
+                </div>
+                <div class="form-group radiobutton">
+                   <input type="radio" name="genero" value="homem"> Homem
+                   <input type="radio" name="genero" value="mulher"> Mulher
+                   <input type="radio" name="genero" value="outro"> Outro
+                </div>
+                <br>
+                <input type="submit" id="enviar" value="Enviar" class="btn btn-success" >
+            </form>
 
         </section>
 
