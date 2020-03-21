@@ -60,7 +60,7 @@ body {
     display: block;
     margin: 0px auto;
     margin-top: 10px;
-    margin-left: 6px;
+    /* margin-left: 6px; */
     float: left;
 }
 
