@@ -32,15 +32,33 @@ body {
     display: block;
     float: left;
     height: 60px;
-    animation: girar infinite 30s linear;
+    margin-top: -9px;
+    margin-right: 10px;
+    animation: girar infinite 5s linear;
 }
 
+/* #logo img {
+    display: block;
+    float: left;
+    height: 60px;
+    animation: girar infinite 30s linear;
+} */
+
 @keyframes girar {
-    from {
-        transform: rotate(0deg);
+    0% {
+        transform: scale(1, 1);
     }
-    to {
-        transform: rotate(360deg);
+
+    50% {
+        transform: scale(1.02, 1.02);
+    }
+
+    55%{
+        transform: scale(0.95, 0.95);
+    }
+
+    100% {
+        transform: scale(1, 1);
     }
 }
 
@@ -52,21 +70,19 @@ body {
     float: left;
 }
 
-#menu {
-    width: 100%;
-    float: right;
+#menu{
+    width: 70%;
+    float:right;
     font-size: 18px;
-    margin-top: -88px;
 }
 
-#menu ul {
+#menu ul{
     line-height: 85px;
-    width: 100%;
-    float: right;
-    margin-right: -25%;
+    width: 60%;
+    float:right;
 }
 
-#menu ul li {
+#menu ul li{
     display: inline-block;
     list-style: none;
     height: 46px;
@@ -74,10 +90,10 @@ body {
     margin-right: 15px;
 }
 
-#menu a {
+#menu a{
     text-decoration: none;
     color: #444;
-    transition: 420ms all;
+    transition: 300ms all;
 }
 
 #menu a:hover {
@@ -89,7 +105,7 @@ body {
     background: #207ce5;
     width: 100%;
     height: 320px;
-    /* line-height: 320px; */
+    margin-top: -22px;
     color: white;
     text-shadow: 0px 0px 5px #444;
 }
@@ -110,9 +126,6 @@ body {
     margin-top: 35px;
 }
 
-.date {
-    margin-top: 10px;
-}
 
 .btn-white {
     text-decoration: none;
@@ -196,11 +209,9 @@ body {
     box-shadow: 0px 0px 5px rgb(88, 88, 88);
     transition: 300ms all;
     cursor: pointer;
-    /* max-width: 168px; */
 }
 
 #busca {
-    /* margin-top: 8px; */
     margin: 0px auto;
     width: 98.8%;
     height: 15%;
@@ -215,28 +226,27 @@ body {
     color: white;
 }
 
-.align-form{
+.align-form {
     width: 50%;
     margin: 0px auto;
 }
 
-.align-form label{
+.align-form label {
     display: block;
     float: left;
     margin-top: 10px;
     margin-bottom: 5px;
     font-size: 17px;
-} 
+}
 
-#enviar{
+#enviar {
     width: 100%;
     display: block;
     margin-top: 5px;
     border: none;
 }
 
-input[type="text"],
-textarea {
+input[type="text"], textarea {
     width: 100%;
     height: 30px;
     border: 1px solid #eee;
@@ -248,13 +258,13 @@ input[type="text"], textarea:focus {
     box-shadow: 0px 0px 5px #ccc inset;
 }
 
-.radiobutton{
+.radiobutton {
     margin-top: 20px !important;
     margin-bottom: 25px !important;
     float: left;
 }
 
-textarea{
+textarea {
     width: 100%;
     height: 100px;
     min-width: 100%;
@@ -277,7 +287,7 @@ textarea{
     padding: 0px;
 }
 
-.article-item h2{
+.article-item h2 {
     display: inline-block;
     width: 100%;
     padding: 0px;
@@ -292,19 +302,18 @@ textarea{
 
 .article-item .date {
     width: 100%;
-    /* display: block; */
     margin-top: 10px;
 }
 
 .article-item a {
     text-decoration: none;
-    }
-
-.article-item a:hover {
-text-decoration: underline;
 }
 
-.article-detail .image-wrap img{
+.article-item a:hover {
+    text-decoration: underline;
+}
+
+.article-detail .image-wrap img {
     width: 100%;
     height: auto;
     float: none;
@@ -314,7 +323,6 @@ text-decoration: underline;
 .article.item a {
     padding-bottom: 30px;
 }
-
 
 .clearfix:after {
     float: none;
@@ -335,4 +343,80 @@ text-decoration: underline;
 
 .clearfix {
     display: block;
+}
+
+/*RESPONSIVO*/
+
+@media (max-width: 1488px){
+    .center{
+        width: 85%;
+    }
+}
+
+@media (max-width: 1314px){
+    .center{
+        width: 95%;
+    }
+
+    #menu ul{
+        width: auto;
+    }
+}
+
+@media (max-width: 881px){
+    #logo{
+        width: 265px;
+    }
+
+    #menu{
+        width: auto;
+    }
+}
+
+@media (max-width: 813px){
+    #logo{
+        float:none;
+        margin: 0px auto;
+        margin-top: 20px;
+    }
+
+    #menu,
+    #menu ul{
+       clear:both;
+       float:none;
+       width: 100%;
+       margin: 0px;
+       padding: 0px;
+       line-height: 43px;
+    }
+
+    #content{
+        float:none;
+        width: 100%;
+    }
+
+    #sidebar{
+        float:none;
+        width: 60%;
+        margin: 0px auto;
+        margin-bottom: 50px;
+    }
+
+    #slider h1{
+        padding-top: 115px;
+        font-size: 25px;
+    }
+
+    .align-form{
+        width: 70%;
+    }
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
